@@ -12,7 +12,7 @@ public class HotelReservationSystemTest {
     public void givenHotelObjectShouldMatch_ReturnTrue()
     {
         Hotel hotel = new Hotel("lakewood",220);
-        Assertions.assertEquals(hotel.showHotelDetails(););
+        Assertions.assertEquals(hotel.showHotelDetails();)
 
     }
 }

@@ -19,7 +19,7 @@ public class HotelReservationSystem {
 
             this.data.add(newEntry);
         }
-
+        
     public static void main(String[] args) {
         HotelReservationSystem hotelReservationSystem = new HotelReservationSystem();
         hotelReservationSystem.addHotelDetails();
