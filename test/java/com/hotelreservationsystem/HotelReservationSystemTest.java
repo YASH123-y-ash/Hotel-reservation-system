@@ -7,12 +7,12 @@ import org.junit.jupiter.api.Test;
 
 public class HotelReservationSystemTest {
 
+    HotelReservationSystem hotelReservationSystem = new HotelReservationSystem();
     @Test
     //checking if given hotel object are matched return true
-    public void givenHotelObjectShouldMatch_ReturnTrue()
+    public void givenHotelHotelObject_ShouldReturnTrue()
     {
-        Hotel hotel = new Hotel("lakewood",220);
-        Assertions.assertEquals(hotel.showHotelDetails(););
-
+        boolean check = hotelReservationSystem.addHotel("lakewood",100);
+        Assertions.assertTrue(check);
     }
 }

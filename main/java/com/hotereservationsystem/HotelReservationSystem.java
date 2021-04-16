@@ -7,21 +7,21 @@ public class HotelReservationSystem {
 
     private ArrayList<Hotel> data=new ArrayList<Hotel>();
 
-    static Scanner sc ;
-
-        //method to add hotel details
-        public void addHotelDetails(){
-            System.out.println("enter hotel name");
-            String hotelName= sc.next();
-            System.out.println("enter rates for regular customer");
-            int ratesForRegularcustomer = sc.nextInt();
-            Hotel newEntry=new Hotel(hotelName, ratesForRegularcustomer);
-
-            this.data.add(newEntry);
-        }
+    //method to add hotel details
+    public boolean addHotel(){
+        Hotel hotel = new Hotel();
+        boolean added = data.add(hotel);
+        return added;
+    }
+    public boolean addHotel(String hotelName,int ratesForRegularCustomer)
+    {
+        Hotel hotel = new Hotel();
+        boolean added = data.add(hotel);
+        return added;
+    }
 
     public static void main(String[] args) {
         HotelReservationSystem hotelReservationSystem = new HotelReservationSystem();
-        hotelReservationSystem.addHotelDetails();
+        hotelReservationSystem.addHotel();
     }
 }

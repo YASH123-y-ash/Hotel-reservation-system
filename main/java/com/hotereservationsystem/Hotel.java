@@ -7,7 +7,7 @@ public class Hotel {
     private int ratesForRegularCustomer;
 
     //constructor
-    public Hotel(String hotelName, int ratesForRegularcustomer) {
+    public Hotel() {
 
         this.hotelName = hotelName;
         this.ratesForRegularCustomer = ratesForRegularCustomer;
